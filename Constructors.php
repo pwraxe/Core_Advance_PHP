@@ -1,93 +1,117 @@
-class Student{
-   function __construct(){
-	    echo "default constructor";
-  } 	
-}
-new Student;
-
--------------------------------------------------------------------------------------------------------------
-
-class Student{
-	function Student(){
-		echo "class name constructor";
-	}	
-}
-new Student;
-
--------------------------------------------------------------------------------------------------------------
-
-class Student{
-	function __construct($id){
-   echo "default constructor $id";
+	class Student{
+		function __construct(){
+			echo "default constructor<br>";
+		}	
+		function __destruct(){
+			echo "object destroy";
+		}
 	}
-}
-new Student(10);
+	new Student;
 
 -------------------------------------------------------------------------------------------------------------
-class Student{
+
+	class Student{
+		function Student(){
+			echo "class name constructor";
+		}	
+	}
+	new Student;
+
+-------------------------------------------------------------------------------------------------------------
+
+	class Student{
+
 		function __construct($id){
 			echo "default constructor $id";
+		}
 	}
-}
 
-new Student(10);
+	new Student(10);
 
 -------------------------------------------------------------------------------------------------------------
 
-class Student{
+	class Student{
+
+		function __construct($id){
+			echo "default constructor $id";
+		}
+	}
+
+	new Student(10);
+
+-------------------------------------------------------------------------------------------------------------
+
+	class Student{
 		public $name;
 		function __construct($id, $name){
-  			$this->name = $name;
-	  		echo "default constructor $id : $this->name";
+			$this->name = $name;
+			echo "default constructor $id : $this->name";
 		}
-}
-new Student(10,"dummy name");
+	}
+
+	new Student(10,"dummy name");
 
 -------------------------------------------------------------------------------------------------------------
-class Student{
+
+	class Student{
+		public $name;
+		function __construct($id, $name){
+			$this->name = $name;
+			echo "default constructor $id : $this->name<br>";
+		}
+		function __destruct(){
+			echo " destructor : $this->name";
+		}
+	}
+	new Student(10,"dummy name");
+
+-------------------------------------------------------------------------------------------------------------
+	
+	class Student{
 		public $_name;
 		function __construct($id, $name){
-			  $this->_name = $name;
-			  echo "default constructor $id : $this->_name";
+			$this->_name = $name;
+			echo "default constructor $id : $this->_name";
 		}
-}
-new Student(10,"dummy name");
+	}
+	new Student(10,"dummy name");
 
 -------------------------------------------------------------------------------------------------------------
 
-class Student{
+	class Student{
 		public $_name;
 		function Student($id, $name){
-			  $this->_name = $name;
-			  echo "default constructor $id : $this->_name";
+			$this->_name = $name;
+			echo "default constructor $id : $this->_name";
 		}
-}
-new Student(10,"dummy name");
+	}
+	new Student(10,"dummy name");
 
----------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
 
-class Student{
+	class Student{
 		public $_name;
 		function Student($id, $name,$mobile=123567890){
-			  $this->_name = $name;
-			  echo "default constructor $id : $this->_name : $mobile";
+			$this->_name = $name;
+			echo "default constructor $id : $this->_name : $mobile";
 		}
-}
-new Student(10,"dummy name");
+	}
+	new Student(10,"dummy name");
 
 -------------------------------------------------------------------------------------------------------------
-class Student{
-	  public $_name;
+
+	class Student{
+		public $_name;
 		function Student($id, $name,$mobile=123567890){
-			  $this->_name = $name;
-			  echo "default constructor $id : $this->_name : $mobile";
+			$this->_name = $name;
+			echo "default constructor $id : $this->_name : $mobile";
 		}
-}
-new Student(10,"dummy name",9874451);
+	}
+	new Student(10,"dummy name",9874451);
 
 -------------------------------------------------------------------------------------------------------------
 
-class Student{
+	class Student{
 		public $_id;
 		public $_name;
 		public $_mobile;
@@ -106,8 +130,8 @@ class Student{
 	$stud->show();
 
 -------------------------------------------------------------------------------------------------------------
-
-  class Student{
+	
+	class Student{
 		public $_id;
 		public $_name;
 		public $_mobile;
@@ -126,8 +150,8 @@ class Student{
 	$stud->show();
 
 -------------------------------------------------------------------------------------------------------------
-
-class Student{
+	
+	class Student{
 		public $_id;
 		public $_name;
 		public $_mobile;
@@ -148,9 +172,9 @@ class Student{
 			echo "Mobile : $this->_mobile<br>";
 		}
 	}
-
 	$stud = new Student($name = "Dummey Name",$mobile = 1234567890,$id=1002);
 	$stud->show1();
 	$stud->show2();
 	$stud->show3();
+
 -------------------------------------------------------------------------------------------------------------
