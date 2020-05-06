@@ -12,4 +12,5 @@
 	}else{
 		echo "Error to Delete Data";
 	}
+	$conn->close();
 ?>
