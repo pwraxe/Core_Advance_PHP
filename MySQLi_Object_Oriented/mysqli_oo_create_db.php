@@ -12,6 +12,7 @@
 	}else{
 		echo "Error to Create Database";
 	}
-
+	
+	$conn->close();
 
 ?>
