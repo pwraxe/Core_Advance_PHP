@@ -12,6 +12,7 @@
 	}else{
 		echo "Error to Update Data";
 	}
+	$conn->close();
 
 
 ?>
