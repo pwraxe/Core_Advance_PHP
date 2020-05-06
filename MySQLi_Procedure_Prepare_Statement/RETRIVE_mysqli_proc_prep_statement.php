@@ -20,6 +20,8 @@
 		while(mysqli_stmt_fetch($result)){
 			echo $id . " | ".$name." | ". $email ." | ".$mobile."<br/>";
 		}
+		mysqli_stmt_close($result);	// prepare statement close
+		mysqli_close($conn);			// connection close
 	}
 
 ?>
@@ -47,6 +49,8 @@
 		while(mysqli_stmt_fetch($result)){
 			echo $id . " | ".$name." | ". $email ." | ".$mobile."<br/>";
 		}
+		mysqli_stmt_close($result);	// prepare statement close
+		mysqli_close($conn);			// connection close
 	}
 
 ?>
