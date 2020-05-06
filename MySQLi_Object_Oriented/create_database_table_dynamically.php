@@ -26,4 +26,6 @@
         else
             echo "Can't Create Table";
     }
+    $conn->close();
+
 ?>
