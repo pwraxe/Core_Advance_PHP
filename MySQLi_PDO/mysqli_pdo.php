@@ -26,5 +26,19 @@
 		echo "Error to Connect";
 	}
 
+--------------------------------------------------------------------------------------------------------------
+	
+	$data_source_name = "mysql: host = localhost; dbname=mydb";
+	$user = "root";
+	$password = "";
+	
+	try{
+		$conn = new PDO($data_source_name,$user,$password);
+		$conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+		echo "Connected";
+	}catch(PDOException $e){
+		echo "Fail to Connect : ".$e->getMessage();
+	}
+	
 
 ?>
