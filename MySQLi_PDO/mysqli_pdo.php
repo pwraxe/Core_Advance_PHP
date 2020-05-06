@@ -15,7 +15,6 @@
 
 ---------------------------------------------------------------------------------------------------------------
 	
-	
 	$data_source_name = "mysql: host = localhost; dbname=mydb";
 	$user = "root";
 	$password = "";
@@ -26,7 +25,6 @@
 	}else{
 		echo "Error to Connect";
 	}
-	
 
 
 ?>
