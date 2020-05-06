@@ -15,5 +15,6 @@
 	}else{
 		echo "Error to Insert Data";
 	}
+	$conn->close();
 
 ?>
