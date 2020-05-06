@@ -4,4 +4,6 @@
 		die("Unable to Connect");
 	}
 	echo "Connected";
+
+	$conn->close();
 ?>
