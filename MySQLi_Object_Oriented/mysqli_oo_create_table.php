@@ -17,6 +17,7 @@
 	}else{
 		echo "Error to create table";
 	}
+	$conn->close();
 
 
 ?>
