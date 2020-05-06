@@ -20,5 +20,6 @@
 	}else{
 		echo "No Record Found :(";
 	}
+	$conn->close();
 
 ?>
