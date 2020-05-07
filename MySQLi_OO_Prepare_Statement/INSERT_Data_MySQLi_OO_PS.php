@@ -7,7 +7,7 @@
 		echo "Connected to Database<hr>";
 
 		$sql = "INSERT INTO demo_table (id, name, email, mobile) VALUES(?, ?, ?, ?)";
-
+		
 		$result = $conn->prepare($sql);
 
 		$id = 1234;
