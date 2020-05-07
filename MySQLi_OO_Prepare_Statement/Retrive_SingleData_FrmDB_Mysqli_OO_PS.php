@@ -18,5 +18,8 @@
 
 		$result->fetch();
 		echo " ID : $id <br> Name : $name <br> Email : $email <br> Mobile : $mobile <br><br>";
+		
+		$result->close();
+		$conn->close();
 	}
 ?>
